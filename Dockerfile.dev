@@ -8,6 +8,8 @@ COPY package.json .
 
 RUN yarn
 
+RUN yarn add --dev jest
+
 COPY . .
 
 CMD ["yarn", "serve"]
